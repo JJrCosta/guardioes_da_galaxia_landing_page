@@ -1,14 +1,24 @@
 @use 'hero';
+@use 'scenes';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-decoration: none;
+    color: #fff;
 }
 
 .container {
-    max-width: 1024px;
+    background-image: linear-gradient(#A915DD, #2C319E);
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+}
+
+.title {
+    padding: 30px 0;
+    font-size: 24px;
+    text-align: center;
 }

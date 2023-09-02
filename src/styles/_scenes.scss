@@ -1,0 +1,26 @@
+.scenes {
+    &__content {
+        background-image: url('../images/scene_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media(max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__trailer,
+    &__images {
+        margin: 5px;
+        text-align: center;
+
+        &__item {
+            margin: 5px;
+        }
+
+    }
+}

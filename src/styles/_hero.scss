@@ -1,25 +1,55 @@
 .hero {
     background-image: url('../images/hero_cover.png');
+    background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
+    padding: 5%;
+    min-height: 545px;
 
     &__content {
         width: 50%;
-    }
 
+        @media(max-width: 768px) {
+            width: 100%;
+            padding-top: 30px;
+        }
+
+        @media(max-width: 375px) {
+            padding: 0;
+        }
+    }
+    
     &__title {
-        margin-top: 30px;
+        display: block;
+        margin: 0 auto;
+        max-width: 320px;
     }
 
     &__sinopse {
-        margin-top: 35px;
-        color: #fff;
-        font-size: 14px;
-        line-height: 18px;
-        padding-right: 80px;        
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 18px;       
     }
 
-    &__divisor {
-        margin: 25px 0 40px 0;
+    &__divisor,
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
     }
+
+    &__btn {
+        background-color: #DEDEDE;
+        color: #2C319E;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 2px;
+
+        &__disney-logo {
+            margin-left: 30px;
+        }
+    }
+
+
 }
